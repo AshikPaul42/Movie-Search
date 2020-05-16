@@ -15,7 +15,7 @@ class SearchSection extends Component<any, any> {
     getSearchResults = (event : any) => {
         event.preventDefault();
         let input : any = document.getElementById("searchInput");
-        fetch('http://www.omdbapi.com/?apikey=fe374ac5&s='+input.value)
+        fetch('https://www.omdbapi.com/?apikey=fe374ac5&s='+input.value)
             .then((response) => {
                 if (response.status !== 200) {
                     console.log('Looks like there was a problem. Status Code: ' +
