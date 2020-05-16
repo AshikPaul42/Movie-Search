@@ -1,0 +1,15 @@
+.searchButton{
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.alignCenter{
+    text-align: center;
+    font-style: italic;
+    color: grey;
+}
+
+.full-width{
+    width: 100%;
+}
