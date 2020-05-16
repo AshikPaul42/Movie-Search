@@ -25,8 +25,8 @@ class SearchSection extends Component<any, any> {
                 response.json().then((data) => {
                     console.log(data);
                     this.setState({
-                        searchResults : data.Response == "True" ? data.Search : [],
-                        resultText : data.Response == "True" ? data.Search.length + " results found" : "Sorry, no items found"
+                        searchResults : data.Response === "True" ? data.Search : [],
+                        resultText : data.Response === "True" ? data.Search.length + " results found" : "Sorry, no items found"
                     });
                 });
             }).catch(function(err) {
