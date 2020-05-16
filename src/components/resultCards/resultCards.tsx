@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import './resultCards.css'
 
-class ResultCards extends Component <any, any>{
+class ResultCards extends React.Component<any, any>{
   
+    constructor(props : any ){
+        super(props);
+    }
+
     render(){
         return ( 
             <div className="col-md-6">
@@ -16,7 +20,7 @@ class ResultCards extends Component <any, any>{
                         {/* <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> */}
                         <a rel="noopener noreferrer" target="_blank" href={'https://www.imdb.com/title/'+this.props.imdb}>IMDB</a>
                     </div>
-                    <img src={this.props.image} className="small-img card-img-right flex-auto d-none d-md-block" data-src={this.props.image} alt="unavailable"/>
+                    <img src={this.state.image} className="small-img card-img-right flex-auto d-none d-md-block" data-src={this.props.image} alt="unavailable"/>
                 </div>
         </div>);
   }
