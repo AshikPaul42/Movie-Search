@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import HeaderSection from '../headerSection/headerSection';
 import SearchSection from '../searchSection/searchSection'
